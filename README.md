@@ -58,18 +58,27 @@ The ledger now reflects the change for packet 1. This will be broadcast across t
 Installation Instructions
 
 -- Make sure you have Node.js (https://nodejs.org/en/), Go (https://golang.org/doc/install) and Docker (https://docs.docker.com/install/) (CE edition is fine) installed.
+
 --Install Hyperledger (https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html)
+
 -- Clone this repository()
+
 -- From the drup-app folder, to remove any pre-existing Docker containers, run:
+
 -- docker rm -f $(docker ps -aq)
+
 -- Start up Hyperledger
+
 -- ./startFabric.sh
 
 Now we install the required Node packages and register the Admin and User components of the network before starting the application.
 
 -- npm install
+
 -- node registerAdmin.js
+
 -- node registerUser.js
+
 -- node server.js
 
 The client should launch on localhost:8000 in any web browser.
