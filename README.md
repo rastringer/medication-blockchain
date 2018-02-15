@@ -15,21 +15,20 @@ This sample application serves as an example of how we might employ blockchain t
 
 Deaths in the U.S. from prescription drug overdoses rose from 3,785 in 2000 to 17,741 in 2016, according to the Centers for Disease Control and Prevention.
 
-Opioid-based painkillers including Oxycodone and Vicodin may be over prescribed by doctors or sold on the black market. An investigation by the Washington Post https://www.washingtonpost.com/graphics/2017/investigations/dea-drug-industry-congress/?utm_term=.4c490838c6a4
-details how some Drug Enforcement Agency powers to freeze suspicious drug shipments have been curtailed. The article refers to the problem of distributor companies sending unrealistically large orders to pharmacies. In one example, distributor Miami-Luken shipped 258,000 hydrocodone pills to one pharmacy in Williamson, West Virginia. That amount would mean 88 pills for each resident.  
+Opioid-based painkillers including Oxycodone and Vicodin may be over prescribed by doctors or sold on the black market. An [investigation](https://www.washingtonpost.com/graphics/2017/investigations/dea-drug-industry-congress/?utm_term=.4c490838c6a4) by the Washington Post details the curtailment of Drug Enforcement Agency powers to freeze suspicious drug shipments. The article refers to unrealistically large orders sent by distributors to pharmacies. In one example, distributor Miami-Luken shipped 258,000 hydrocodone pills to one pharmacy in Williamson, West Virginia. That amount would mean 88 pills for each of Williamson's 2,924 residents.  
 
-Though the epidemic requires attention beyond technology, blockchain technology could be useful in ensuring transparency and validity of transfer of drugs from manufacturer to pharmacy or doctor's office. The resulting immutable ledger would provide a record of transactions, transfer of drugs, and could alert authorities to potentially harmful or illegal distribution patterns. Drugs recovered from the black market could also be traced from source to find weak links in the supply chain.
+Though the epidemic requires attention beyond technology, blockchain could be useful in ensuring transparency and validity of transfer of drugs from manufacturer to pharmacy or doctor's office. The resulting immutable ledger would provide a record of transfer of drugs, ensure legitimacy of the supply chain, and could alert authorities to potentially harmful or illegal distribution patterns. Drugs recovered from the black market could also be traced from source to find weak links.
 
 ### How blockchain could help
 
-This is by no means a production-ready app, however serves as a micro demonstration of how we can create and transfer medication between actors on the supply chain. The project is built on Hyperledger Fabric(https://www.hyperledger.org/projects/fabric), an open-source blockchain framework run by the Linux Foundation. The application is a fork and adaption of the excellent sample app material found here (https://github.com/hyperledger/fabric-samples).
+This is by no means a production-ready app, however serves as a micro demonstration of how we can create and transfer medication between actors on the supply chain. The project is built on [Hyperledger Fabric](https://www.hyperledger.org/projects/fabric), an open-source blockchain framework run by the Linux Foundation. The application is a fork and adaption of the excellent sample app material found [here](https://github.com/hyperledger/fabric-samples).
 
 Blockchain's distributed ledger approach differs from traditional databases as its records are decentralized. There is no single point of failure for the data storage, and the ledger is synchronized across the network, which in this case could comprise manufacturers, distributors, pharmacies, hospitals and authorities. The process of keeping the ledger up to date with all parties in agreement is through Hyperledger Fabric's process of consensus. This involves ordering of transactions or transfers of medication and participating peers on the network to agree on and commit changes to the ledger.
 
 ### This Application
 
 In contrast to open blockchain systems including Bitcoin and Ethereum, Hyperledger Fabric is permissioned and private. This means that all members have to enroll through its Membership Service Provider module.  
-Fabric also offers the creation of 'channels', which allow a group of participants to create partitioned ledgers for transactions. This may be appealing to commercial entities who might be paying or charging different prices to different clients.
+Fabric also offers the creation of 'channels', which allow a group of participants to create partitioned ledgers for transactions. This may be appealing to commercial entities who may pay or charge different prices to different clients.
 
 ### Walkthrough
 
@@ -57,11 +56,11 @@ The ledger now reflects the change for packet 1. This will be broadcast across t
 
 Installation Instructions
 
--- Make sure you have Node.js (https://nodejs.org/en/), Go (https://golang.org/doc/install) and Docker (https://docs.docker.com/install/) (CE edition is fine) installed.
+-- Make sure you have [Node.js](https://nodejs.org/en/), [Go](https://golang.org/doc/install) and [Docker](https://docs.docker.com/install/) (CE edition is fine) installed.
 
---Install Hyperledger (https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html)
+--Install [Hyperledger](https://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html)
 
--- Clone this repository()
+-- Clone this repository
 
 -- From the drup-app folder, to remove any pre-existing Docker containers, run:
 
