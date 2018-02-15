@@ -1,4 +1,4 @@
-## Hyperledger Fabric Sample Application
+## Medication Tracker Built on Hyperledger Fabric
 
 [//]: # (Image References)
 
